@@ -1,0 +1,90 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a base font size and family */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #000; /* Change background to black */
+    text-align: center;
+    padding-top: 60px; /* Adjust this value based on the header height */
+
+}
+
+/* Style the main container */
+.container {
+    max-width: 80vw; /* 80% of the viewport width */
+    margin: 20px auto; /* Center the container horizontally */
+    padding: 20px;
+    background: #1e1e1e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+/* Style the header */
+header {
+    position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #000000;
+            color: white;
+            padding: 10px 0;
+            z-index: 500;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header h1 a {
+    color: white;
+}
+
+/* Style the navigation */
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 1px solid #1e1e1e;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: #2f2f2f;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Style the main content */
+main {
+    margin: 20px 0;
+}
+
+main h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+main p {
+    margin-bottom: 20px;
+}
+hr {
+    width: 100%;
+    margin: 20px 0;
+}
