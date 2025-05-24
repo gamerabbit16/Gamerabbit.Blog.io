@@ -178,19 +178,13 @@ img {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        position: relative;
-        padding: 0 16px;
+        padding: 0 2px 0 8px;
+        width: 100%;
     }
     .nav-toggle-label {
-        /* Enlève position: fixed et place-le en flex */
-        position: static;
-        right: auto;
-        top: auto;
         margin: 0;
-        width: 44px;
-        height: 44px;
-        background: none;
-        border: none;
+        width: 40px;
+        height: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -198,6 +192,37 @@ img {
         cursor: pointer;
         z-index: 2002;
         padding: 0;
+        background: none;
+        border: none;
+        position: static;
+    }
+    .header-container h1 {
+        margin: 0;
+        font-size: 1.1em;
+        text-align: left;
+        flex: 1;
+    }
+    .nav-toggle-label {
+        margin-left: auto;
+        margin-right: 0;
+        width: 36px; /* Plus petit si tu veux */
+        height: 44px;
+    }
+    .nav-toggle-label {
+        margin-left: auto;
+        margin-right: 0;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 2002;
+        padding: 0;
+        background: none;
+        border: none;
+        position: static;
     }
     .nav-toggle-label span {
         display: block;
@@ -210,13 +235,13 @@ img {
         position: relative;
     }
     .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
-        transform: rotate(45deg) translateY(5px);
+        transform: rotate(45deg) translateY(10px);
     }
     .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
         opacity: 0;
     }
     .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
-        transform: rotate(-45deg) translateY(-5px);
+        transform: rotate(-45deg) translateY(-10px);
     }
     /* Empêche le scroll du fond quand le menu est ouvert */
     .nav-toggle:checked ~ main,
@@ -248,6 +273,7 @@ img {
         font-size: 1.3em;
         padding: 22px 0;
         margin: 0 24px;
+        margin-right: 120px;
         border-radius: 12px;
         background: #222;
         border: none;
