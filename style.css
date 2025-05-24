@@ -273,12 +273,14 @@ img {
         font-size: 1.3em;
         padding: 22px 0;
         margin: 0 24px;
-        margin-right: 120px;
         border-radius: 12px;
         background: #222;
         border: none;
         text-align: center;
         transition: background 0.2s;
+        /* Ajoute du padding horizontal */
+        padding-left: 16px;
+        padding-right: 36px;
     }
     nav a:hover {
         background: #333;
@@ -412,5 +414,42 @@ img {
     }
     .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -7px);
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        display: none; /* Par défaut, le menu est caché */
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        margin: 0;
+        left: 0;
+        right: 0;
+        padding: 100px 0 0 0;
+        background: #111;
+        min-height: 100vh;
+        box-sizing: border-box;
+        position: fixed;
+        z-index: 1000;
+        transition: 0.3s;
+    }
+    nav a {
+        margin: 0 0 18px 0;
+        padding: 22px 0;
+        width: 90%;                /* Largeur des boutons */
+        max-width: 400px;          /* Optionnel : limite la taille sur grands écrans */
+        border-radius: 12px;
+        background: #222;
+        border: none;
+        text-align: center;
+        font-size: 1.3em;
+        color: #fff;
+        display: block;
+        box-sizing: border-box;
+        transition: background 0.2s;
+    }
+    .nav-toggle:checked + .nav-toggle-label + nav {
+        display: flex; /* Affiche le menu seulement quand le hamburger est coché */
     }
 }
