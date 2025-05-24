@@ -167,6 +167,10 @@ img {
         align-items: center !important;
         gap: 0 !important;
     }
+    .airport-flex {
+                            flex-direction: column !important;
+                            align-items: stretch !important;
+                        }
 }
 
 /* Menu hamburger mobile */
