@@ -18,7 +18,7 @@ body {
 
 /* Style the main container */
 .container {
-    max-width: 800px;
+    max-width: 1750px;
     margin: 20px auto;
     padding: 20px;
     background: #1e1e1e;
@@ -26,6 +26,7 @@ body {
     text-align: center;
     color: #ffffff;
     border-radius: 15px;
+    margin-top: 80px; /* Ajoute cette ligne pour laisser de la place au header */
 }
 
 /* Style the header */
@@ -109,6 +110,8 @@ img {
     .container {
         max-width: 98vw;
         padding: 5px;
+        border-radius: 15px; /* <-- Ajoute ceci */
+        margin-top: 60px; /* Ajuste selon la hauteur de ton header mobile */
     }
     /* Force tous les flex contenant des images à passer en colonne */
     .container img {
@@ -121,9 +124,8 @@ img {
         gap: 0 !important;
     }
     h1 {
-        font-size: 1.3em;
+        font-size: 2em; /* Bigger than default mobile, but smaller than desktop */
         text-align: center;
-        padding: 0 10px;
         word-break: break-word;
         margin-bottom: 18px; /* Ajoute de l'espace sous le titre */
     }
