@@ -18,8 +18,8 @@ body {
 
 /* Style the main container */
 .container {
-    max-width: 80vw; /* 80% of the viewport width */
-    margin: 20px auto; /* Center the container horizontally */
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
     background: #1e1e1e;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
