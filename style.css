@@ -210,11 +210,11 @@ img {
         margin-right: 0;
     }
     header h1 {
-        font-size: 0.7em;
+        font-size: 1em;
         text-align: center;
-        padding: 0 5px;
+        padding: 0 10px;
         word-break: break-word;
-        margin-bottom: 14px;
+        margin-bottom: 18px;
     }
     header h1 a {
         font-size: inherit;
@@ -223,9 +223,9 @@ img {
     }
     /* Pour les titres d'articles sur la page principale */
     .container h1 {
-        font-size: 0.85em;
+        font-size: 1em;
         margin: 0;
-        padding: 0 3px;
+        padding: 0 5px;
         word-break: break-word;
     }
 }
