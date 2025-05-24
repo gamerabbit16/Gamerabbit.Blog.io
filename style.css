@@ -390,7 +390,7 @@ img {
         position: absolute;
         left: -9999px; /* cache visuellement mais reste accessible */
     }
-    .nav-toggle:checked + .nav-toggle-label + nav {
+    .nav-toggle:checked ~ nav {
         display: flex;
     }
     .nav-toggle-label span {
