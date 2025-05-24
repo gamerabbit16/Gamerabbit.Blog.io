@@ -1,7 +1,6 @@
 html, body {
     margin: 0;
     padding: 0;
-}
 
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
     margin: 0;
@@ -124,7 +123,7 @@ img {
         max-width: 98vw;
         padding: 5px;
         border-radius: 15px; /* <-- Ajoute ceci */
-        margin-top: 60px; /* Ajuste selon la hauteur de ton header mobile */
+        
     }
     /* Force tous les flex contenant des images à passer en colonne */
     .container img {
@@ -289,7 +288,6 @@ img {
         max-width: 98vw;
         padding: 5px;
         border-radius: 15px;
-        margin-top: 60px; /* Ajuste selon la hauteur de ton header mobile */
     }
     .container img {
         max-width: 100%;
@@ -385,10 +383,15 @@ img {
         height: 40px;
         margin: 0 auto;
     }
-    .nav-toggle {
-        display: block;
+        .nav-toggle {
         position: absolute;
-        left: -9999px; /* cache visuellement mais reste accessible */
+        left: -9999px;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+        pointer-events: none;
+        display: block; /* Nécessaire pour l’accessibilité, mais invisible */
+    }
     }
     .nav-toggle:checked ~ nav {
         display: flex;
@@ -415,9 +418,6 @@ img {
     .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -7px);
     }
-}
-
-@media (max-width: 700px) {
     nav {
         display: none; /* Par défaut, le menu est caché */
         flex-direction: column;
@@ -453,3 +453,4 @@ img {
         display: flex; /* Affiche le menu seulement quand le hamburger est coché */
     }
 }
+
