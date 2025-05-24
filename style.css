@@ -195,3 +195,18 @@ img {
         display: flex;
     }
 }
+
+.article-img {
+    width: 220px;
+    height: 180px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+    .article-img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+}
