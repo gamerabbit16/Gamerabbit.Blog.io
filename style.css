@@ -142,6 +142,10 @@ img {
         width: 100%;
         box-sizing: border-box;
     }
+    .container, .container p, .container a, .container h1, .container h2, .container h3 {
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
 }
 
 /* Menu hamburger mobile */
