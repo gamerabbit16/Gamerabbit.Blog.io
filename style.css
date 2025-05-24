@@ -1,3 +1,8 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
     margin: 0;
     padding: 0;
@@ -12,32 +17,30 @@ body {
     color: #333;
     background-color: #000000; /* Change background to black */
     text-align: center;
-    padding-top: 60px; /* Adjust this value based on the header height */
-
+    /* padding-top: 60px;  <-- SUPPRIME cette ligne */
 }
 
 /* Style the main container */
 .container {
     max-width: 1750px;
-    margin: 20px auto;
+    margin: 20px auto 20px auto; /* plus de margin-top */
     padding: 20px;
     background: #1e1e1e;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     color: #ffffff;
     border-radius: 15px;
-    margin-top: 80px; /* Ajoute cette ligne pour laisser de la place au header */
 }
 
 /* Style the header */
 header {
     position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: #000000;
-            color: white;
-            padding: 10px 0;
-            z-index: 500;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    z-index: 500;
 }
 
 header h1 {
@@ -49,6 +52,14 @@ header h1 a {
     color: white;
 }
 
+header h1, header h1 a {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: default;
+}
+
 /* Style the navigation */
 nav {
     margin: 20px 0;
@@ -56,7 +67,6 @@ nav {
 }
 
 nav a {
-    margin: 0 15px;
     color: #ffffff;
     text-decoration: none;
     margin: 0 10px;
@@ -105,6 +115,9 @@ img {
     margin: 10px auto;
 }
 
+.spacer {
+    height: 220px; /* Espace entre les sections */
+}
 /* Empiler les images côte à côte en colonne sur mobile */
 @media (max-width: 600px) {
     .container {
@@ -155,55 +168,119 @@ img {
         word-break: break-word;
         overflow-wrap: break-word;
     }
+    .spacer {
+        height: 50px; /* Ajuste la hauteur de l'espace entre les sections */
+    }
 }
 
 @media (max-width: 700px) {
-    .responsive-img {
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 0 16px;
+    }
+    .nav-toggle-label {
+        /* Enlève position: fixed et place-le en flex */
+        position: static;
+        right: auto;
+        top: auto;
+        margin: 0;
+        width: 44px;
+        height: 44px;
+        background: none;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 2002;
+        padding: 0;
+    }
+    .nav-toggle-label span {
+        display: block;
+        width: 32px;
+        height: 4px;
+        margin: 6px 0;
+        background: #fff;
+        border-radius: 2px;
+        transition: 0.3s cubic-bezier(.4,2,.6,1);
+        position: relative;
+    }
+    .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
+        transform: rotate(45deg) translateY(5px);
+    }
+    .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+        opacity: 0;
+    }
+    .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-5px);
+    }
+    /* Empêche le scroll du fond quand le menu est ouvert */
+    .nav-toggle:checked ~ main,
+    .nav-toggle:checked ~ .spacer {
+        filter: blur(2px);
+        pointer-events: none;
+        user-select: none;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        margin: 0;
+        background: #111;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        padding: 100px 0 0 0;
+        z-index: 1000;
+        min-height: 100vh;
+        transition: 0.3s;
+    }
+    .nav-toggle:checked + .nav-toggle-label + nav {
+        display: flex;
+    }
+    nav a {
+        font-size: 1.3em;
+        padding: 22px 0;
+        margin: 0 24px;
+        border-radius: 12px;
+        background: #222;
+        border: none;
+        text-align: center;
+        transition: background 0.2s;
+    }
+    nav a:hover {
+        background: #333;
+    }
+    .container {
+        max-width: 98vw;
+        padding: 5px;
+        border-radius: 15px;
+        margin-top: 60px; /* Ajuste selon la hauteur de ton header mobile */
+    }
+    .container img {
         max-width: 100%;
         height: auto;
-        margin: 10px 0;
     }
-    /* Empile les images côte à côte en colonne sur mobile */
     .container > div > div[style*="display: flex"] {
         flex-direction: column !important;
         align-items: center !important;
         gap: 0 !important;
     }
-    .airport-flex {
-                            flex-direction: column !important;
-                            align-items: stretch !important;
-                        }
-}
-
-/* Menu hamburger mobile */
-.nav-toggle {
-    display: none;
-}
-
-.nav-toggle-label {
-    display: none;
-    position: fixed;
-    top: 15px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1001;
-    cursor: pointer;
-}
-.nav-toggle-label span {
-    display: block;
-    width: 30px;
-    height: 4px;
-    margin: 5px 0;
-    background: #fff;
-    border-radius: 2px;
-    transition: 0.3s;
-}
-
-@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+        text-align: center;
+        word-break: break-word;
+        margin-bottom: 18px;
+    }
+    p, a {
+        font-size: 1em;
+    }
     nav {
         display: none;
         flex-direction: column;
@@ -219,22 +296,33 @@ img {
         z-index: 1000;
         min-height: 100vh;
     }
-    .nav-toggle-label {
-        display: flex;
+    nav a {
+        display: block;
+        margin: 0;
+        padding: 15px 0;
+        border-radius: 8px;
+        font-size: 1.1em;
+        border: none;
+        background: #222;
+        width: 100%;
+        box-sizing: border-box;
     }
-    .nav-toggle:checked + .nav-toggle-label + nav {
-        display: flex;
+    .container, .container p, .container a, .container h1, .container h2, .container h3 {
+        word-break: break-word;
+        overflow-wrap: break-word;
     }
-}
-
-.article-img {
-    width: 220px;
-    height: 180px;
-    object-fit: cover;
-    margin-right: 20px;
-}
-
-@media (max-width: 700px) {
+    .spacer {
+        height: 100px; /* Ajuste la hauteur de l'espace entre les sections */
+    }
+    .responsive-img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    .airport-flex {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
     .article-img {
         width: 100%;
         height: auto;
@@ -252,11 +340,51 @@ img {
         color: white;
         text-decoration: none;
     }
-    /* Pour les titres d'articles sur la page principale */
     .container h1 {
         font-size: 1em;
         margin: 0;
         padding: 0 5px;
         word-break: break-word;
+    }
+    /* Menu hamburger mobile */
+    .nav-toggle-label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+    }
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        left: -9999px; /* cache visuellement mais reste accessible */
+    }
+    .nav-toggle:checked + .nav-toggle-label + nav {
+        display: flex;
+    }
+    .nav-toggle-label span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        margin: 5px 0;
+        background: #fff;
+        border-radius: 2px;
+        transition: 0.3s;
+        position: relative;
+        z-index: 2001;
+    }
+
+    /* Animation hamburger -> croix */
+    .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+        opacity: 0;
+    }
+    .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
     }
 }
