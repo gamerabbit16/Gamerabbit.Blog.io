@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+}
 
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
     margin: 0;
@@ -115,12 +116,12 @@ img {
 }
 
 .spacer {
-    height: 220px; /* Espace entre les sections */
+    height: 240px; /* Espace entre les sections */
 }
 /* Empiler les images côte à côte en colonne sur mobile */
 
 
-@media (max-width: 700px) {
+@media (max-width: 825px) {
     .header-container {
         display: flex;
         align-items: center;
@@ -286,7 +287,7 @@ img {
         overflow-wrap: break-word;
     }
     .spacer {
-        height: 100px; /* Ajuste la hauteur de l'espace entre les sections */
+        height: 90px; /* Ajuste la hauteur de l'espace entre les sections */
     }
     .responsive-img {
         max-width: 100%;
@@ -302,24 +303,7 @@ img {
         height: auto;
         margin-right: 0;
     }
-    header h1 {
-        font-size: 1em;
-        text-align: center;
-        padding: 0 10px;
-        word-break: break-word;
-        margin-bottom: 18px;
-    }
-    header h1 a {
-        font-size: inherit;
-        color: white;
-        text-decoration: none;
-    }
-    .container h1 {
-        font-size: 1em;
-        margin: 0;
-        padding: 0 5px;
-        word-break: break-word;
-    }
+    
     /* Menu hamburger mobile */
     .nav-toggle-label {
         display: flex;
@@ -340,11 +324,11 @@ img {
         pointer-events: none;
         display: block; /* Nécessaire pour l’accessibilité, mais invisible */
     }
-    }
-    .nav-toggle:checked ~ nav {
+    
+        .nav-toggle:checked ~ nav {
         display: flex;
     }
-    .nav-toggle-label span {
+        .nav-toggle-label span {
         display: block;
         width: 30px;
         height: 4px;
@@ -357,16 +341,16 @@ img {
     }
 
     /* Animation hamburger -> croix */
-    .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
+        .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
         transform: rotate(45deg) translate(6px, 6px);
     }
-    .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+        .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
         opacity: 0;
     }
-    .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
+        .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -7px);
     }
-    nav {
+        nav {
         display: none; /* Par défaut, le menu est caché */
         flex-direction: column;
         align-items: center;
@@ -382,7 +366,7 @@ img {
         z-index: 1000;
         transition: 0.3s;
     }
-    nav a {
+        nav a {
         margin: 0 0 18px 0;
         padding: 22px 0;
         width: 90%;                /* Largeur des boutons */
@@ -397,7 +381,7 @@ img {
         box-sizing: border-box;
         transition: background 0.2s;
     }
-    .nav-toggle:checked + .nav-toggle-label + nav {
+        .nav-toggle:checked + .nav-toggle-label + nav {
         display: flex; /* Affiche le menu seulement quand le hamburger est coché */
     }
 }
