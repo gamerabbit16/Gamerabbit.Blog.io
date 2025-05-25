@@ -122,6 +122,41 @@ img {
 
 
 @media (max-width: 825px) {
+    .close-btn {
+        /* button size */
+        width: 40px;
+        height: 40px;
+        
+        /* shape, border & box sizing */
+        border: 2px solid #fff;    /* 2px solid white border */
+        border-radius: 50%;          /* this is where we make that juicy button round */
+        box-sizing: border-box;      /* include border in the size */
+
+          /* colors, not so much of the sun */
+        background-color: #222;      /* dark circle */
+        color: #fff;                 /* sets the font color */
+
+        /* typography alignment action */
+        font-size: 24px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* swively user interaction */
+        cursor: pointer;
+        transition: background-color 0.2s, border-color 0.2s;
+    }
+
+    .close-btn:hover {
+        background-color: #333;      /* just about says it all, the colors within */
+        border-color: #fff;          /* keeps the border white when hovering the button */
+    }
+
+    .close-btn:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(255,255,255,0.5);  /* subtle glow on focus for that ooh, aah effect */
+    }
     .header-container {
         display: flex;
         align-items: center;
@@ -183,13 +218,13 @@ img {
         position: relative;
     }
     .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
-        transform: rotate(45deg) translateY(10px);
+        transform: rotate(45deg) translateY(0px);
     }
     .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
         opacity: 0;
     }
     .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
-        transform: rotate(-45deg) translateY(-10px);
+        transform: rotate(-45deg) translateY(0px);
     }
     /* Empêche le scroll du fond quand le menu est ouvert */
     .nav-toggle:checked ~ main,
