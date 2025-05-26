@@ -78,7 +78,7 @@ nav a {
 }
 
 nav a:hover {
-    background: #1b1b1b;
+    background: #dfdfdf;
     color: #fff;
     border-radius: 5px;
 }
