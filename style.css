@@ -124,6 +124,9 @@ img {
 a {
     color: #1b1b1b;
 }
+hr{
+    width: 70%;
+}
 @media (max-width: 825px) {
     .close-btn {
         /* button size */
@@ -324,6 +327,9 @@ a {
     }
     header {
         height: 30px;
+    }
+    hr{
+    width: 90%;
     }
 }
 
