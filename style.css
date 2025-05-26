@@ -125,6 +125,10 @@ img {
 a {
     color: #1b1b1b;
 }
+p{
+    font-size: 1.2em;
+    line-height: 1.5;
+}
 hr{
     width: 70%;
 }
