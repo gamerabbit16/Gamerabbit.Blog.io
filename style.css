@@ -23,7 +23,7 @@ body {
 
 /* Style the main container */
 .container {
-    max-width: 1500px;
+    max-width: 1300px;
     margin: 20px auto 20px auto; /* plus de margin-top */
     padding: 20px;
     background: #fafafa;
