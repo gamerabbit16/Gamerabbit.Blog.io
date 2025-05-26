@@ -23,7 +23,7 @@ body {
 
 /* Style the main container */
 .container {
-    max-width: 1750px;
+    max-width: 1500px;
     margin: 20px auto 20px auto; /* plus de margin-top */
     padding: 20px;
     background: #fafafa;
@@ -103,10 +103,11 @@ hr {
 
 /* Rendre les images adaptatives */
 img {
-    max-width: 100%;
+    max-width: 300px;
+    height: auto;
     height: auto;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     border-radius: 10px;
 }
 
@@ -201,6 +202,11 @@ hr{
     .container img {
         max-width: 100%;
         height: auto;
+    }
+    img{
+        width: 50%;
+        height: auto;
+        margin: 15px;
     }
     .container > div > div[style*="display: flex"] {
         flex-direction: column !important;
