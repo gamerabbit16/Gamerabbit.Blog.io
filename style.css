@@ -132,6 +132,9 @@ p{
 hr{
     width: 70%;
 }
+.nav-toggle {
+    display: none; /* Cacher le toggle par défaut */
+}
 @media (max-width: 825px) {
     .close-btn {
         /* button size */
