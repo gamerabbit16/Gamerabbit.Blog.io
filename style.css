@@ -7,6 +7,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl,
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #111;
 }
 
 /* Set a base font size and family */
@@ -15,7 +16,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
-    background-color: #000000; /* Change background to black */
+    background-color: #e4e4e4; /* Change background to black */
     text-align: center;
     /* padding-top: 60px;  <-- SUPPRIME cette ligne */
 }
@@ -25,7 +26,7 @@ body {
     max-width: 1750px;
     margin: 20px auto 20px auto; /* plus de margin-top */
     padding: 20px;
-    background: #1e1e1e;
+    background: #fafafa;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     color: #ffffff;
@@ -37,7 +38,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #000000;
+    background-color: #e4e4e4;
     color: white;
     z-index: 500;
     height: 200px;
@@ -49,7 +50,7 @@ header h1 {
 }
 
 header h1 a {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 header h1, header h1 a {
@@ -67,17 +68,17 @@ nav {
 }
 
 nav a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     margin: 0 10px;
     padding: 10px 20px;
-    border: 1px solid #1e1e1e;
+    border: 1px solid #949494;
     border-radius: 5px;
     transition: background 0.3s, color 0.3s;
 }
 
 nav a:hover {
-    background: #2f2f2f;
+    background: #868686;
     color: #fff;
     border-radius: 5px;
 }
@@ -106,6 +107,7 @@ img {
     height: auto;
     display: block;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .responsive-img {
@@ -116,11 +118,12 @@ img {
 }
 
 .spacer {
-    height: 200px; /* Espace entre les sections */
+    height: 210px; /* Espace entre les sections */
 }
 /* Empiler les images côte à côte en colonne sur mobile */
-
-
+a {
+    color: #000000;
+}
 @media (max-width: 825px) {
     .close-btn {
         /* button size */
@@ -211,7 +214,7 @@ img {
         overflow-wrap: break-word;
     }
     .spacer {
-        height: 70px; /* Ajuste la hauteur de l'espace entre les sections */
+        height: 60px; /* Ajuste la hauteur de l'espace entre les sections */
     }
     .responsive-img {
         max-width: 100%;
