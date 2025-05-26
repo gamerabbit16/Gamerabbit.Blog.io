@@ -45,7 +45,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 header h1 a {
@@ -164,106 +164,21 @@ img {
         padding: 0 2px 0 8px;
         width: 100%;
     }
-    .nav-toggle-label {
-        margin: 0;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        z-index: 2002;
-        padding: 0;
-        background: none;
-        border: none;
-        position: static;
-    }
+    
     .header-container h1 {
         margin: 0;
-        font-size: 1.1em;
+        font-size: 1.5em;
         text-align: left;
+        margin-left: 15px;
         flex: 1;
     }
-    .nav-toggle-label {
-        margin-left: auto;
-        margin-right: 0;
-        width: 36px; /* Plus petit si tu veux */
-        height: 44px;
-    }
-    .nav-toggle-label {
-        margin-left: auto;
-        margin-right: 0;
-        width: 44px;
-        height: 44px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        z-index: 2002;
-        padding: 0;
-        background: none;
-        border: none;
-        position: static;
-    }
-    .nav-toggle-label span {
-        display: block;
-        width: 32px;
-        height: 4px;
-        margin: 6px 0;
-        background: #fff;
-        border-radius: 2px;
-        transition: 0.3s cubic-bezier(.4,2,.6,1);
-        position: relative;
-    }
-    .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
-        transform: rotate(45deg) translateY(0px);
-    }
-    .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
-        opacity: 0;
-    }
-    .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
-        transform: rotate(-45deg) translateY(0px);
-    }
+    
     /* Empêche le scroll du fond quand le menu est ouvert */
     .nav-toggle:checked ~ main,
     .nav-toggle:checked ~ .spacer {
         filter: blur(2px);
         pointer-events: none;
         user-select: none;
-    }
-    nav {
-        display: none;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 18px;
-        margin: 10px;
-        background: #111;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        padding-top: 70px;
-        z-index: 1000;
-        min-height: 100vh;
-        transition: 0.3s;
-    }
-    .nav-toggle:checked + .nav-toggle-label + nav {
-        display: flex;
-    }
-    nav a {
-        font-size: 1.3em;
-        padding: 22px 0;
-        margin: 0 24px;
-        border-radius: 12px;
-        background: #222;
-        border: none;
-        text-align: center;
-        transition: background 0.2s;
-        /* Ajoute du padding horizontal */
-        padding-left: 16px;
-        padding-right: 36px;
     }
     nav a:hover {
         background: #333;
@@ -290,32 +205,6 @@ img {
     }
     p, a {
         font-size: 1em;
-    }
-    nav {
-        display: none;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 10px;
-        margin: 10px 0;
-        background: #111;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        padding-top: 60px;
-        z-index: 1000;
-        min-height: 100vh;
-    }
-    nav a {
-        display: block;
-        margin: 0;
-        padding: 15px 0;
-        border-radius: 8px;
-        font-size: 1.1em;
-        border: none;
-        background: #222;
-        width: 100%;
-        box-sizing: border-box;
     }
     .container, .container p, .container a, .container h1, .container h2, .container h3 {
         word-break: break-word;
@@ -389,21 +278,24 @@ img {
         display: none; /* Par défaut, le menu est caché */
         flex-direction: column;
         align-items: center;
+        min-height: 100vh;
         width: 100vw;
-        margin: 0;
+        margin: 10px 0;
         left: 0;
         right: 0;
         padding: 70px 0 0 0;
+        padding-top: 60px;
         background: #111;
         min-height: 100vh;
         box-sizing: border-box;
         position: fixed;
-        z-index: 1000;
+        gap: 10px;
         transition: 0.3s;
     }
         nav a {
         margin: 0 0 18px 0;
         padding: 22px 0;
+        margin: 0 24px;
         width: 90%;                /* Largeur des boutons */
         max-width: 400px;          /* Optionnel : limite la taille sur grands écrans */
         border-radius: 12px;
@@ -415,6 +307,8 @@ img {
         display: block;
         box-sizing: border-box;
         transition: background 0.2s;
+        padding-left: 16px;
+        padding-right: 36px;
     }
         .nav-toggle:checked + .nav-toggle-label + nav {
         display: flex; /* Affiche le menu seulement quand le hamburger est coché */
