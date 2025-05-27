@@ -1,2 +1,3 @@
 I created a blog where I will talk or even discuss about my favorite topics
 Here i will talk about old Mac (like the PowerMac G5), proggraming, unowhy y13...
+https://gamerabbit16.github.io/Gamerabbit.Blog.io/
