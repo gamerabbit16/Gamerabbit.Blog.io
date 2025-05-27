@@ -135,6 +135,30 @@ hr{
 .nav-toggle {
     display: none; /* Cacher le toggle par défaut */
 }
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1000px;
+        margin: 20px auto 20px auto; /* plus de margin-top */
+        padding: 20px;
+        background: #fafafa;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        color: #ffffff;
+        border-radius: 15px;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 800px;
+        margin: 20px auto 20px auto; /* plus de margin-top */
+        padding: 20px;
+        background: #fafafa;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        color: #ffffff;
+        border-radius: 15px;
+    }
+}
 @media (max-width: 825px) {
     .close-btn {
         /* button size */
