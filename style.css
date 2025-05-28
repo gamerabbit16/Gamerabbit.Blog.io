@@ -107,7 +107,7 @@ hr {
 
 /* Rendre les images adaptatives */
 img {
-    max-width: 300px;
+    max-width: 600px;
     height: auto;
     height: auto;
     display: block;
