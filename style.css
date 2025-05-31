@@ -230,9 +230,9 @@ hr{
     .header-container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        
         padding: 0 2px 0 8px;
-        width: 100%;
+        
     }
     
     .header-container h1 {
@@ -421,6 +421,10 @@ hr{
         border-radius: 10px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         cursor: pointer;
+    }
+    .pride{
+        
+        text-align: center;
     }
 }
 
