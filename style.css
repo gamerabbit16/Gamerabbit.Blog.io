@@ -123,7 +123,7 @@ img {
 }
 
 .spacer {
-    height: 230px; /* Espace entre les sections */
+    height: 220px; /* Espace entre les sections */
 }
 /* Empiler les images côte à côte en colonne sur mobile */
 a {
@@ -284,6 +284,7 @@ hr{
         color: #1b1b1b;
     }
     p, a {
+        text-align: center;
         font-size: 1em;
         color: #1b1b1b;
     }
@@ -292,7 +293,7 @@ hr{
         overflow-wrap: break-word;
     }
     .spacer {
-        height: 60px; /* Ajuste la hauteur de l'espace entre les sections */
+        height: 100px; /* Ajuste la hauteur de l'espace entre les sections */
     }
     .responsive-img {
         max-width: 100%;
@@ -425,6 +426,10 @@ hr{
     .pride{
         
         text-align: center;
+    }
+    .pagestyle{
+        text-align: center;
+        align-items: center;
     }
 }
 
