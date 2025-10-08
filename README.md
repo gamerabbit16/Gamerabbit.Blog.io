@@ -1,3 +1,5 @@
+![Page Icon](./Images/profile.png)
+
 # Gamerabbit's Blog
 
 Welcome to **Gamerabbit's Blog**!  
