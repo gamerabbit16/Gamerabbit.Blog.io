@@ -435,5 +435,18 @@ hr{
         text-align: center;
         align-items: center;
     }
+    img {
+        width: 100%;
+      }
+      .responsive-row {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+      }
+      .responsive-row img {
+        margin: 20px 0 0 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+    
 }
 
