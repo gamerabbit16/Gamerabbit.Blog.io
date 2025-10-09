@@ -1,82 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/main</loc>
-  <lastmod>2025-09-24T17:29:14+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/unowhy13/main</loc>
-  <lastmod>2025-09-24T17:29:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/mac/main</loc>
-  <lastmod>2025-09-24T17:29:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/tech/main</loc>
-  <lastmod>2025-09-24T17:29:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/others/main</loc>
-  <lastmod>2025-09-24T17:29:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/about</loc>
-  <lastmod>2025-09-24T17:29:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/tech/Airport-Express-2nd-gen</loc>
-  <lastmod>2025-09-24T17:29:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/tech/Airport-Extreme-6th-gen-and-TimeCapsule</loc>
-  <lastmod>2025-09-24T17:29:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/tech/Airport-Extreme-1gen</loc>
-  <lastmod>2025-09-24T17:29:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/tech/Airport-Express-After2weeks</loc>
-  <lastmod>2025-09-24T17:29:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/others/2025Pridemonthspe</loc>
-  <lastmod>2025-09-24T17:29:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/others/JBLGO4</loc>
-  <lastmod>2025-09-24T17:29:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/tech/Airport-Express</loc>
-  <lastmod>2025-09-24T17:29:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/mac/ramppcg5</loc>
-  <lastmod>2025-09-24T17:29:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/main</loc>
+    <lastmod>2025-09-24T17:29:14+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/unowhy13/main</loc>
+    <lastmod>2025-09-24T17:29:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/mac/main</loc>
+    <lastmod>2025-09-24T17:29:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/tech/main</loc>
+    <lastmod>2025-09-24T17:29:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/others/main</loc>
+    <lastmod>2025-09-24T17:29:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/about</loc>
+    <lastmod>2025-09-24T17:29:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/tech/Airport-Express-2nd-gen</loc>
+    <lastmod>2025-09-24T17:29:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/tech/Airport-Extreme-6th-gen-and-TimeCapsule</loc>
+    <lastmod>2025-09-24T17:29:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/tech/Airport-Extreme-1gen</loc>
+    <lastmod>2025-09-24T17:29:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/tech/Airport-Express-After2weeks</loc>
+    <lastmod>2025-09-24T17:29:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/others/2025Pridemonthspe</loc>
+    <lastmod>2025-09-24T17:29:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/others/JBLGO4</loc>
+    <lastmod>2025-09-24T17:29:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/tech/Airport-Express</loc>
+    <lastmod>2025-09-24T17:29:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://gamerabbit16.github.io/Gamerabbit.Blog.io/mac/ramppcg5</loc>
+    <lastmod>2025-09-24T17:29:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 </urlset>
