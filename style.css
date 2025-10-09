@@ -44,12 +44,12 @@ header {
     background-color: #e4e4e4;
     color: white;
     z-index: 500;
-    height: 190px;
+    height: 160px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 header h1 a {
@@ -123,7 +123,7 @@ img {
 }
 
 .spacer {
-    height: 180px; /* Espace entre les sections */
+    height: 140px; /* Espace entre les sections */
 }
 /* Empiler les images côte à côte en colonne sur mobile */
 a {
